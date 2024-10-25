@@ -1,5 +1,4 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <header>
@@ -7,7 +6,6 @@
       <ul class="navbar__links">
         <li><NuxtLink class="navbar__link-url" to="">Damen</NuxtLink></li>
         <li><NuxtLink class="navbar__link-url" to="">Herren</NuxtLink></li>
-        <li><NuxtLink class="navbar__link-url" to="">Über uns</NuxtLink></li>
       </ul>
       <NuxtLink class="navbar__logo-url" to="/">
         <div class="navbar__logo">Ethkl</div>
@@ -28,13 +26,15 @@
 .navbar {
   display: flex;
   align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 
   &__links {
     display: flex;
     flex: 1;
     justify-content: flex-start;
     list-style: none;
-    padding-left: 20px;
+    padding-left: 0;
     text-transform: uppercase;
   }
 
