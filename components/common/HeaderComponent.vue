@@ -26,51 +26,50 @@
 .navbar {
   display: flex;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0.3125rem 1.25rem 0.3125rem 1.25rem;
+}
 
-  &__links {
-    display: flex;
-    flex: 1;
-    justify-content: flex-start;
-    list-style: none;
-    padding-left: 0;
-    text-transform: uppercase;
+.navbar__links {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  list-style: none;
+  padding-left: 0;
+  text-transform: uppercase;
+}
+
+.navbar__link-url {
+  font-size: 0.875rem;
+  margin-right: 1.25rem;
+  cursor: pointer;
+
+  &:hover {
+    color: #707070;
   }
+}
 
-  &__link-url {
-    font-size: 14px;
-    margin-right: 20px;
-    cursor: pointer;
+.navbar__logo-url {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  text-decoration: none;
+}
 
-    &:hover {
-      color: #707070;
-    }
-  }
+.navbar__logo {
+  align-items: center;
+  font-size: 1.875rem;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
 
-  &__logo-url {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    text-decoration: none;
-  }
-
-  &__logo {
-    align-items: center;
-    font-size: 30px;
-    font-weight: 500;
-    color: #333;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-  }
-
-  &__icons {
-    display: flex;
-    gap: 10px;
-    flex: 1;
-    justify-content: flex-end;
-  }
+.navbar__icons {
+  display: flex;
+  gap: 0.625rem;
+  flex: 1;
+  justify-content: flex-end;
 }
 </style>

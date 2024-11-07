@@ -1,0 +1,16 @@
+@use "sass:math";
+
+$base-size: 16px;
+
+@function rem-multi($values...) {
+  $converted-values: ();
+
+  @each $value in $values {
+    @if type-of($value) == "number" and unit($value) == "px" {
+
+      $value: math.div($value, $base-size) * 1rem;
+    }
+    $converted-values: append($converted-values, $value);
+  }
+  @return $converted-values;
+}

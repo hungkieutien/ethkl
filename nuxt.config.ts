@@ -1,5 +1,4 @@
 export default defineNuxtConfig({
-  css: ["@/assets/main.scss"],
   modules: ["@nuxtjs/google-fonts", "@nuxt/icon", "@nuxt/image"],
   googleFonts: {
     families: {
@@ -15,10 +14,11 @@ export default defineNuxtConfig({
       preprocessorOptions: {
         scss: {
           api: "modern-compiler",
+          additionalData: '@import "@/assets/scss/utils/utils.scss";',
         },
       },
     },
   },
-
+  css: ["@/assets/scss/main.scss"],
   compatibilityDate: "2024-10-14",
 });

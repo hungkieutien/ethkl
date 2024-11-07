@@ -5,19 +5,23 @@ defineProps<{
 </script>
 
 <template>
-  <a :href="link" class="button-link">
+  <a href="" class="button-link">
     {{ label }}
   </a>
 </template>
 
 <style lang="scss">
 .button-link {
-  background-color: #fff;
-  border: 1px solid #000;
-  padding: 10px 20px;
-  font-size: 12px;
-  border-radius: 8px;
-  cursor: pointer;
-  text-transform: uppercase;
+  .button-link {
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 0.625rem 1.25rem;
+    font-size: 0.75rem;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+  }
 }
 </style>

@@ -4,37 +4,38 @@ import Button from "~/components/common/Button.vue";
 const heroSizes =
   "(max-width: 600px) 570px, (max-width: 900px) 1140px, (max-width: 1200px) 1710px, (max-width: 1800px) 2280px, 2850px";
 
+//TODO elegantere und saubere Lösung an der Stelle.
 const imagePaths = {
   left: {
     webp: [
-      "/images/hero/hero_image_left_570w.webp 570w",
-      "/images/hero/hero_image_left_1140w.webp 1140w",
-      "/images/hero/hero_image_left_1710w.webp 1710w",
-      "/images/hero/hero_image_left_2280w.webp 2280w",
-      "/images/hero/hero_image_left_2850w.webp 2850w",
+      "/images/homepage/hero/hero_image_left_570w.webp 570w",
+      "/images/homepage/hero/hero_image_left_1140w.webp 1140w",
+      "/images/homepage/hero/hero_image_left_1710w.webp 1710w",
+      "/images/homepage/hero/hero_image_left_2280w.webp 2280w",
+      "/images/homepage/hero/hero_image_left_2850w.webp 2850w",
     ].join(",\n"),
     jpeg: [
-      "/images/hero/hero_image_left_570w.jpeg 570w",
-      "/images/hero/hero_image_left_1140w.jpeg 1140w",
-      "/images/hero/hero_image_left_1710w.jpeg 1710w",
-      "/images/hero/hero_image_left_2280w.jpeg 2280w",
-      "/images/hero/hero_image_left_2850w.jpeg 2850w",
+      "/images/homepage/hero/hero_image_left_570w.jpeg 570w",
+      "/images/homepage/hero/hero_image_left_1140w.jpeg 1140w",
+      "/images/homepage/hero/hero_image_left_1710w.jpeg 1710w",
+      "/images/homepage/hero/hero_image_left_2280w.jpeg 2280w",
+      "/images/homepage/hero/hero_image_left_2850w.jpeg 2850w",
     ].join(",\n"),
   },
   right: {
     webp: [
-      "/images/hero/hero_image_right_570w.webp 570w",
-      "/images/hero/hero_image_right_1140w.webp 1140w",
-      "/images/hero/hero_image_right_1710w.webp 1710w",
-      "/images/hero/hero_image_right_2280w.webp 2280w",
-      "/images/hero/hero_image_right_2850w.webp 2850w",
+      "/images/homepage/hero/hero_image_right_570w.webp 570w",
+      "/images/homepage/hero/hero_image_right_1140w.webp 1140w",
+      "/images/homepage/hero/hero_image_right_1710w.webp 1710w",
+      "/images/homepage/hero/hero_image_right_2280w.webp 2280w",
+      "/images/homepage/hero/hero_image_right_2850w.webp 2850w",
     ].join(",\n"),
     jpeg: [
-      "/images/hero/hero_image_right_570w.jpeg 570w",
-      "/images/hero/hero_image_right_1140w.jpeg 1140w",
-      "/images/hero/hero_image_right_1710w.jpeg 1710w",
-      "/images/hero/hero_image_right_2280w.jpeg 2280w",
-      "/images/hero/hero_image_right_2850w.jpeg 2850w",
+      "/images/homepage/hero/hero_image_right_570w.jpeg 570w",
+      "/images/homepage/hero/hero_image_right_1140w.jpeg 1140w",
+      "/images/homepage/hero/hero_image_right_1710w.jpeg 1710w",
+      "/images/homepage/hero/hero_image_right_2280w.jpeg 2280w",
+      "/images/homepage/hero/hero_image_right_2850w.jpeg 2850w",
     ].join(",\n"),
   },
 };
@@ -55,7 +56,7 @@ const imagePaths = {
           decoding="async"
           :sizes="heroSizes"
           :srcset="imagePaths.left.jpeg"
-          src="/images/hero/hero_image_left_2850w.jpeg"
+          src="/images/homepage/hero/hero_image_left_2850w.jpeg"
           class="hero__image"
         >
       </picture>
@@ -76,7 +77,7 @@ const imagePaths = {
           decoding="async"
           :sizes="heroSizes"
           :srcset="imagePaths.right.jpeg"
-          src="/images/hero/hero_image_right_2850w.jpeg"
+          src="/images/homepage/hero/hero_image_right_2850w.jpeg"
           class="hero__image"
         >
       </picture>
@@ -87,7 +88,7 @@ const imagePaths = {
   </section>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 .hero {
   display: flex;
   max-width: 100%;
